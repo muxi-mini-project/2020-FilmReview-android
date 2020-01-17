@@ -1,4 +1,4 @@
-package com.example.film_review;
+package com.example.film_review.firstpage.attention;
 
 public class AttentionItem {
     public  int icon;

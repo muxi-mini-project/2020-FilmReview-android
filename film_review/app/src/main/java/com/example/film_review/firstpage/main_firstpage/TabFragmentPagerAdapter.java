@@ -1,4 +1,4 @@
-package com.example.film_review;
+package com.example.film_review.firstpage.main_firstpage;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

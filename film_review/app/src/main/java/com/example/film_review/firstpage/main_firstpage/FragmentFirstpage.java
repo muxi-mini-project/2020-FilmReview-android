@@ -1,19 +1,20 @@
-package com.example.film_review;
+package com.example.film_review.firstpage.main_firstpage;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
-import android.widget.TableLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.film_review.R;
+import com.example.film_review.firstpage.attention.fragment_attention;
+import com.example.film_review.firstpage.found.fragment_found;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;

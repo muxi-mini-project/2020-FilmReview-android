@@ -1,4 +1,4 @@
-package com.example.film_review;
+package com.example.film_review.firstpage.found;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.film_review.R;
 
 public class fragment_found extends Fragment {
     @Nullable

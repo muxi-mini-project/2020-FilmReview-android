@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.film_review.firstpage.main_firstpage.FragmentFirstpage;
+import com.example.film_review.personal.fragment_personal;
 import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MainActivity extends AppCompatActivity {

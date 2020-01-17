@@ -1,4 +1,4 @@
-package com.example.film_review;
+package com.example.film_review.personal;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.film_review.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 public class fragment_personal extends Fragment {

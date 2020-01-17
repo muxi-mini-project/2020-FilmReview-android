@@ -1,4 +1,4 @@
-package com.example.film_review;
+package com.example.film_review.firstpage.attention;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.film_review.R;
+import com.example.film_review.firstpage.attention.AttentionItem;
+import com.example.film_review.firstpage.attention.ListViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
