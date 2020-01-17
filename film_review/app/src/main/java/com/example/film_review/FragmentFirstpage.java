@@ -19,7 +19,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class fragment_firstpage extends Fragment {
+public class FragmentFirstpage extends Fragment {
     protected SearchView mSearchView;
     private List<Fragment> mList;
     private TabFragmentPagerAdapter adapter;

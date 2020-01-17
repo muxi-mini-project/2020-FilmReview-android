@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class fragment_attention extends Fragment {
     public RecyclerView list;
-    public List<attention_item> mData;
+    public List<AttentionItem> mData;
     private LinearLayoutManager mLinearLayoutManager;
     private ListViewAdapter mAdapter;
 
@@ -48,7 +47,7 @@ public class fragment_attention extends Fragment {
 
         for(int i=0;i<10;i++) {
             //创建数据对象
-            attention_item data=new attention_item();
+            AttentionItem data=new AttentionItem();
             //data.icon=attention_users.icons[i];
            // data.name=attention_users.username[i];
 

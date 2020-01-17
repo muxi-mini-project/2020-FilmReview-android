@@ -3,17 +3,12 @@ package com.example.film_review;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.viewpager.widget.ViewPager;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.drawee.view.SimpleDraweeView;
-import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView btn_personal;
@@ -26,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment= fragmentManager.findFragmentById(R.id.fragment_container);
 
         if(fragment==null){
-            fragment=new fragment_firstpage();
+            fragment=new FragmentFirstpage();
             fragmentManager.beginTransaction().add(R.id.fragment_container,fragment).commit();
         }
         btn_personal=(ImageView)findViewById(R.id.personal);

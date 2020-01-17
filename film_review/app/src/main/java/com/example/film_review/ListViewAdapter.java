@@ -16,7 +16,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
 
     //设置数据
 
-    private List<attention_item> mData;
+    private List<AttentionItem> mData;
 
     public void initData() {
 
@@ -25,7 +25,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
 
         for(int i=0;i<10;i++) {
             //创建数据对象
-            attention_item data=new attention_item();
+            AttentionItem data=new AttentionItem();
             //data.icon=attention_users.icons[i];
             // data.name=attention_users.username[i];
 
@@ -74,9 +74,9 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
             //mName=(TextView)itemView.findViewById(R.id.attention_username);
         }
 
-        public void setData(attention_item attention_item) {
-            mIcon.setImageResource(attention_item.icon);
-            mName.setText(attention_item.name);
+        public void setData(AttentionItem AttentionItem) {
+            mIcon.setImageResource(AttentionItem.icon);
+            mName.setText(AttentionItem.name);
 
         }
     }
