@@ -60,14 +60,14 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:id="@+id/second"
+                android:id="@+id/personal"
                 android:background="@drawable/geren"
                 android:layout_centerInParent="true"/>
 
             <TextView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_below="@+id/second"
+                android:layout_below="@+id/personal"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="个人"/>

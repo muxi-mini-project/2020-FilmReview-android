@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/c_concern_count"
+            android:layout_width="37dp"
+            android:layout_height="13dp"
+            android:text="关注人数"
+            fresco:layout_constraintStart_toEndOf="@+id/c_concern"
+            fresco:layout_constraintTop_toTopOf="@+id/c_concern"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/f_fan_count"
+            android:layout_width="37dp"
+            android:layout_height="13dp"
+            android:text="粉丝人数"
+            fresco:layout_constraintStart_toEndOf="@+id/f_fan"
+            fresco:layout_constraintTop_toTopOf="@+id/f_fan"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/c_concern"
+            android:layout_width="48dp"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text="@string/concern"
+            fresco:layout_constraintEnd_toEndOf="parent"
+            fresco:layout_constraintHorizontal_bias="0.096"
+            fresco:layout_constraintStart_toStartOf="parent"
+            fresco:layout_constraintTop_toBottomOf="@+id/avatar"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/f_fan"
+            android:layout_width="48dp"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text="@string/fan"
+            fresco:layout_constraintEnd_toEndOf="parent"
+            fresco:layout_constraintHorizontal_bias="0.438"
+            fresco:layout_constraintStart_toStartOf="parent"
+            fresco:layout_constraintTop_toBottomOf="@+id/avatar"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="48dp"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text="@string/likes"
+            fresco:layout_constraintEnd_toEndOf="parent"
+            fresco:layout_constraintHorizontal_bias="0.779"
+            fresco:layout_constraintStart_toStartOf="parent"
+            fresco:layout_constraintTop_toBottomOf="@+id/avatar"
+            tools:ignore="MissingConstraints" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avatar"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            fresco:layout_constraintStart_toStartOf="parent"
+            fresco:layout_constraintTop_toTopOf="parent"
+            fresco:placeholderImage="@drawable/place_init"
+            fresco:roundAsCircle="true" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="126dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:background="#68b0f9"
+            android:gravity="center"
+            android:text="姓名"
+            fresco:layout_constraintEnd_toEndOf="parent"
+            fresco:layout_constraintHorizontal_bias="0.0"
+            fresco:layout_constraintRight_toRightOf="parent"
+            fresco:layout_constraintStart_toEndOf="@+id/avatar"
+            fresco:layout_constraintTop_toTopOf="@+id/avatar"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="91dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="20dp"
+            android:background="#984ff7"
+            android:gravity="center"
+            android:text="个人ID"
+            fresco:layout_constraintBottom_toBottomOf="@+id/avatar"
+            fresco:layout_constraintHorizontal_bias="0.0"
+            fresco:layout_constraintLeft_toRightOf="@+id/avatar"
+            fresco:layout_constraintRight_toRightOf="parent"
+            fresco:layout_constraintTop_toBottomOf="@+id/name"
+            fresco:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="37dp"
+            android:layout_height="13dp"
+            android:text="收藏人数"
+            fresco:layout_constraintStart_toEndOf="@+id/likes"
+            fresco:layout_constraintTop_toTopOf="@+id/likes"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="169dp"
+            android:layout_marginLeft="169dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text=">"
+            fresco:layout_constraintEnd_toEndOf="parent"
+            fresco:layout_constraintHorizontal_bias="1.0"
+            fresco:layout_constraintStart_toEndOf="@+id/avatar"
+            fresco:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewparper1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fresco:tabGravity="fill"
+            fresco:tabIndicatorColor="#F0F3DA0E" />
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
